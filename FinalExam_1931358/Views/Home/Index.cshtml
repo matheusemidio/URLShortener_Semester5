@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<br />
+<br />
+<div class="alert-success">
+    @ViewBag.message
+</div>
+<br />
+<br />
+<form action="/" method="post">
+    <div class="form-group">
+        @Html.Label("Enter the short Url to be redirected")
+        @Html.TextBox("short_url", null, new { @class = "form-control" })
+    </div>
+    <input type="submit" name="Redirect" value="Redirect" class="btn btn-success" formaction="/urls/RedirectUrl" />
+</form>
+<br />
+<br />
+<div>
+    <h4>Web Server Applications II</h4>
+    <br /><br />
+    <h4>Presented to Mr. Kaveh Bakhtiyari</h4>
+    <h4>The author of this is exam is: Matheus Emidio de Melo Cadena - 1931358</h4>
+    <h4>Date that it was written: December 10, 2021</h4>
+</div>

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<FinalExam_1931358.url>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<br />
+<br />
+<div class="alert-warning">
+    @ViewBag.message
+</div>
+<br />
+<br />
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.short_url)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.long_url)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.username)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.short_url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.long_url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.username)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.short_url }) |
+                @Html.ActionLink("Details", "Details", new { id = item.short_url }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.short_url })
+            </td>
+        </tr>
+    }
+
+</table>

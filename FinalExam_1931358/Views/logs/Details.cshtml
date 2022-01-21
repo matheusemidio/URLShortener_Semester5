@@ -1,0 +1,26 @@
+﻿@model FinalExam_1931358.log
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>log</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.lastVisit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastVisit)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.username }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

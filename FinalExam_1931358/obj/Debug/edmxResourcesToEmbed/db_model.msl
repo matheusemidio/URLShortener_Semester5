@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbFinalExam_1931358ModelStoreContainer" CdmEntityContainer="dbFinalExam_1931358Entities">
+    <EntitySetMapping Name="urls">
+      <EntityTypeMapping TypeName="dbFinalExam_1931358Model.url">
+        <MappingFragment StoreEntitySet="urls">
+          <ScalarProperty Name="short_url" ColumnName="short_url" />
+          <ScalarProperty Name="long_url" ColumnName="long_url" />
+          <ScalarProperty Name="username" ColumnName="username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="dbFinalExam_1931358Model.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logs">
+      <EntityTypeMapping TypeName="dbFinalExam_1931358Model.log">
+        <MappingFragment StoreEntitySet="logs">
+          <ScalarProperty Name="lastVisit" ColumnName="lastVisit" />
+          <ScalarProperty Name="username" ColumnName="username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

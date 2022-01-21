@@ -1,0 +1,42 @@
+﻿@model FinalExam_1931358.url
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>url</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.short_url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.short_url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.long_url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.long_url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.short_url }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
